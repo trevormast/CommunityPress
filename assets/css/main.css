@@ -1,0 +1,26 @@
+h1, h2, h3, h4, a {
+ font-family: 'Montserrat', sans-serif;;
+}
+
+p {
+  font-family: 'Cousine', monospace;
+}
+
+/*NAV*/
+h2.brand {
+  margin-top: 0;
+}
+
+nav.navbar-inverse {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0;
+  max-width: 80%;
+  min-height: 20%;
+}
+
+.nav-container {
+
+}
+
+/*WRAPPERS*/
