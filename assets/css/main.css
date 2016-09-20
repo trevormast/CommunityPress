@@ -28,6 +28,10 @@ p {
   width: auto;
 }
 
+nav.navbar.navbar-inverse {
+  padding-left: 0;
+}
+
 nav {
 }
 
@@ -44,25 +48,25 @@ nav {
   padding-left: 15px;
 }
 
-nav.navbar.navbar-inverse {
-  padding-left: 0;
-}
-
 h2.brand {
   margin-top: 0;
 }
 
-
 /*WRAPPERS*/
+.container {
+  margin-bottom: 60px;
+}
+
+/*BANNER*/
 .banner {
   position: relative;
-  height: 500px;
+  height: 400px;
   margin-bottom: 60px;
 }
 
 .banner > img {
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 
 .overlay {
@@ -81,4 +85,72 @@ h2.brand {
 .overlay-content > h1, h3 {
   color: white;
 }
+
+/*BADGES*/
+
+#badges-row h3{
+  color: black;
+}
+
+#badges-row > div {
+  height: 300px;
+  border-right: 1px solidck;
+  padding-top: -20px;
+  padding-bottom: -20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#badges-row > div:nth-child(3) {
+  border: none;
+}
+
+#badges-row > div:last-child {
+  border: none;
+}
+
+#badges-row img {
+  height: 100px;
+  margin-bottom: -15px;
+}
+
+#badges-row i {
+  font-size: 90px;
+}
+
+
+.call button.btn.btn-primary {
+  font-size: 18px;
+  padding: 26px 42px 26px 42px;
+  border: none;
+  border-radius: 0;
+  background-color: #e27563;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
