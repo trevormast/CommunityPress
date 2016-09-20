@@ -8,11 +8,27 @@ p {
 }
 
 /*NAV*/
+.navbar-wrapper {
+  position: absolute;
+  top: 0; right: 0; left: 0;
+  z-index: 20
+}
+
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
 nav {
-  z-index: 100;
-  border: none;
-  /*padding-top: 40px;*/
-  /*padding-bottom: 40px;*/
 }
 
 .navbar-inverse .navbar-brand {
@@ -28,12 +44,8 @@ nav {
   padding-left: 15px;
 }
 
-nav.navbar-inverse {
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 0;
-  max-width: 90%;
-  min-height: 20%;
+nav.navbar.navbar-inverse {
+  padding-left: 0;
 }
 
 h2.brand {
@@ -43,15 +55,14 @@ h2.brand {
 
 /*WRAPPERS*/
 .banner {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: relative;
+  height: 500px;
+  margin-bottom: 60px;
 }
 
 .banner > img {
-  min-width: 100%;
-  max-height: 500px;
+  width: 100%;
+  height: 500px;
 }
 
 .overlay {
@@ -59,7 +70,7 @@ h2.brand {
   position: absolute;
   min-height: 100%;
   z-index: 1;
-  top: 0; right: 0; left: 0;
+  top: 0; right: 0; left: 0; bottom: 0;
 }
 
 .overlay-content {
