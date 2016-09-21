@@ -1,3 +1,6 @@
+/*hover color #ef7c69*/
+/*secondary button color #474d55*/
+/*secondaray hover #535a63*/
 
 h1, h2, h3, h4, a {
  font-family: 'Montserrat', sans-serif;;
@@ -57,6 +60,16 @@ h2.brand {
   margin-bottom: 60px;
 }
 
+.header {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.inner {
+  display: inline-block;
+}
+
 /*BANNER*/
 .banner {
   position: relative;
@@ -88,38 +101,39 @@ h2.brand {
 
 /*BADGES*/
 
-#badges-row h3{
+#badges-inner h3{
   color: black;
 }
 
-#badges-row > div {
+#badges-inner > div {
   height: 300px;
-  border-right: 1px solidck;
+  border-right: 1px solid black;
   padding-top: -20px;
   padding-bottom: -20px;
   margin-bottom: 15px;
   text-align: center;
 }
 
-#badges-row > div:nth-child(3) {
+#badges-inner > div:nth-child(3) {
   border: none;
 }
 
-#badges-row > div:last-child {
+#badges-inner > div:last-child {
   border: none;
 }
 
-#badges-row img {
+#badges-inner img {
   height: 100px;
   margin-bottom: -15px;
 }
 
-#badges-row i {
+#badges-inner i {
   font-size: 90px;
 }
 
 
 .call button.btn.btn-primary {
+  position: relative;
   font-size: 18px;
   padding: 26px 42px 26px 42px;
   border: none;
@@ -127,25 +141,41 @@ h2.brand {
   background-color: #e27563;
 }
 
+/*PRINTING*/
 
+.container-fluid#printing-container {
+  /*background-color: #EFEFEF;*/
+}
 
+.row#printing-row {
 
+  margin-bottom: 30px;
+}
 
+.row#printing-row h3 {
+  color: black;
+}
 
+.row#printing-row .col-inner {
+  /*background-color: #EFEFEF;*/
+  border: 1px solid black;
+  /*border-radius: 5px;*/
+  text-align: center;
+  margin-right: auto;
+  padding-top: 0;
+  height: 300px;
+  overflow: hidden;
+}
 
+.inner-header {
+  padding: 15px 0 15px 0;
+  background-color: #e27563;
+  margin-bottom: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.inner-header h3 {
+  margin: 0 0 0 0;
+}
 
 
 
