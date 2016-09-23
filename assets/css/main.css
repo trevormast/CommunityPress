@@ -239,7 +239,8 @@ img.logo {
 }
 
 .col-inner#image {
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 2px;
 }
 .col-inner#image > img {
   max-height: 300px;
