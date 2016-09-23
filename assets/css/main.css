@@ -2,7 +2,7 @@
 /*secondary button color #474d55*/
 /*secondaray hover #535a63*/
 
-h1, h2, h3, h4, a {
+h1, h2, h3, h4, a, button {
  font-family: 'Montserrat', sans-serif;;
 }
 
@@ -36,10 +36,17 @@ td {
 }
 
 nav.navbar.navbar-inverse {
-  background-color: #272d35;
+  /*background-color: #272d35;*/
   border: none;
   padding-left: 0;
 }
+
+/*.navbar-nav > li > a, .navbar-brand {
+    padding-top:20px !important; padding-bottom:0 !important;
+    height: 80px;
+}
+
+.navbar {min-height:30px !important;}*/
 
 
 .navbar-inverse .navbar-brand {
@@ -82,6 +89,28 @@ h2.brand {
 
 .inner {
   display: inline-block;
+}
+
+.inner-header, .inner-header-border {
+  padding: 15px 0 15px 0;
+  /*background-color: #e27563;*/
+  margin-bottom: 15px;
+}
+
+.inner-header-border {
+  border-bottom: 1px solid black;
+}
+
+.inner-header h2, h3 {
+  margin: 0 0 0 0;
+}
+
+.table-header h4 {
+  margin-top: 0;
+}
+
+.inner-header > h3{
+  color: black;
 }
 
 /*BANNER*/
@@ -155,6 +184,34 @@ h2.brand {
   background-color: #e27563;
 }
 
+/*ABOUT US*/
+.row#about-row {
+  margin-bottom: 50px;
+}
+
+.col-inner#about-left {
+  margin-right: 50px;
+}
+
+.col-inner#contact {
+  text-align: right;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+.col-inner#contact p {
+  font-size: 18px;
+}
+
+.col-inner#phone-email {
+  margin-top: 60px;
+}
+
+img.logo {
+  height: 50px;
+}
+
+
 /*PRINTING*/
 
 .container-fluid#printing-container {
@@ -185,21 +242,6 @@ h2.brand {
 }
 .col-inner#image > img {
   max-height: 300px;
-}
-
-.inner-header {
-  border-bottom: 1px solid black;
-  padding: 15px 0 15px 0;
-  /*background-color: #e27563;*/
-  margin-bottom: 15px;
-}
-
-.inner-header h3 {
-  margin: 0 0 0 0;
-}
-
-.table-header h4 {
-  margin-top: 0;
 }
 
 
