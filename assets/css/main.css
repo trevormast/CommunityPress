@@ -68,12 +68,13 @@ h2.brand {
 
 /*WRAPPERS*/
 .container {
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
 }
 
 .header {
   margin-top: 60px;
   margin-bottom: 60px;
+  border-top: 4px solid #407C8D;
   text-align: center;
 }
 
@@ -98,7 +99,7 @@ h2.brand {
 }
 
 .inner-header-border {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #407C8D;
 }
 
 .inner-header h2, h3 {
@@ -149,7 +150,7 @@ h2.brand {
 }
 
 #badges-inner > div {
-  height: 300px;
+  /*height: 300px;*/
   border-right: 1px solid black;
   padding-top: -20px;
   padding-bottom: -20px;
