@@ -6,8 +6,12 @@ h1, h2, h3, h4, a {
  font-family: 'Montserrat', sans-serif;;
 }
 
-p {
+p, li {
   font-family: 'Cousine', monospace;
+}
+
+td {
+  padding-right: 40px;
 }
 
 /*NAV*/
@@ -32,11 +36,11 @@ p {
 }
 
 nav.navbar.navbar-inverse {
+  background-color: #272d35;
+  border: none;
   padding-left: 0;
 }
 
-nav {
-}
 
 .navbar-inverse .navbar-brand {
   color: black;
@@ -64,6 +68,16 @@ h2.brand {
   margin-top: 60px;
   margin-bottom: 60px;
   text-align: center;
+}
+
+.header > h1 {
+  margin-bottom: 20px;
+}
+
+.header > i {
+  line-height: 0;
+  font-size: 75px;
+  color: #e27563;
 }
 
 .inner {
@@ -144,7 +158,7 @@ h2.brand {
 /*PRINTING*/
 
 .container-fluid#printing-container {
-  /*background-color: #EFEFEF;*/
+  /*background-color: #EFEBEF;*/
 }
 
 .row#printing-row {
@@ -158,18 +172,25 @@ h2.brand {
 
 .row#printing-row .col-inner {
   /*background-color: #EFEFEF;*/
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   /*border-radius: 5px;*/
-  text-align: center;
   margin-right: auto;
   padding-top: 0;
-  height: 300px;
+  /*height: 300px;*/
   overflow: hidden;
 }
 
+.col-inner#image {
+  border: 1px solid black;
+}
+.col-inner#image > img {
+  max-height: 300px;
+}
+
 .inner-header {
+  border-bottom: 1px solid black;
   padding: 15px 0 15px 0;
-  background-color: #e27563;
+  /*background-color: #e27563;*/
   margin-bottom: 15px;
 }
 
@@ -177,9 +198,41 @@ h2.brand {
   margin: 0 0 0 0;
 }
 
+.table-header h4 {
+  margin-top: 0;
+}
 
 
+/*FOOTER*/
 
+.container-fluid.footer {
+  background-color: #272d35;
+}
+
+.footer-content {
+  color: white;
+}
+
+.footer .row {
+  margin-top: 50px;
+  height: 300px;
+}
+
+.brand img {
+  height: 50px;
+}
+
+.brand .col-inner {
+  text-align: right;
+}
+
+.address .col-inner{
+
+}
+
+.contact .col-inner {
+  margin-top: 10px;
+}
 
 
 
