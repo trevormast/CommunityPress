@@ -93,7 +93,7 @@ h2.brand {
 }
 
 .inner-header, .inner-header-border {
-  padding: 15px 0 15px 0;
+  padding: 0 0 15px 0;
   /*background-color: #e27563;*/
   margin-bottom: 15px;
 }
