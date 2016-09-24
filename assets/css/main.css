@@ -2,7 +2,7 @@
 /*secondary button color #474d55*/
 /*secondaray hover #535a63*/
 
-h1, h2, h3, h4, a, button {
+h1, h2, h3, h4, a, b, button {
  font-family: 'Montserrat', sans-serif;;
 }
 
@@ -41,12 +41,18 @@ nav.navbar.navbar-inverse {
   padding-left: 0;
 }
 
-/*.navbar-nav > li > a, .navbar-brand {
-    padding-top:20px !important; padding-bottom:0 !important;
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:30px !important; padding-bottom:0 !important;
     height: 80px;
 }
 
-.navbar {min-height:30px !important;}*/
+.navbar-right > li > a {
+  color: #407C8D;
+  font-size: 20px;
+}
+
+
+/*.navbar {min-height:30pxr !important;}*/
 
 
 .navbar-inverse .navbar-brand {
@@ -166,12 +172,14 @@ table#products-table p {
   margin-bottom: -11px;
 }
 
-.badges-content i {
+.badges-content i, b {
+  line-height: 1;
   font-size: 90px;
 }
 
 h3.badges-header {
-  margin-top: 10px
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .call button.btn.btn-primary {
