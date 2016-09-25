@@ -90,6 +90,11 @@ h2.brand {
   text-align: center;
 }
 
+.grid-test {
+  border: 2px solid black;
+  min-height: 300px;
+}
+
 .header > h1 {
   margin-bottom: 20px;
 }
@@ -126,7 +131,7 @@ table#products-table p {
 
 }
 
-.inner-header > h3{
+.inner-header, .inner-header-border > h3{
   color: black;
 }
 
@@ -264,6 +269,22 @@ img.logo {
   max-height: 300px;
 }
 
+
+/*COPY SERVICES*/
+.row#copy-row {
+  margin-bottom: 30px;
+}
+
+#copy-row > h3 {
+  color: black ;
+}
+
+.copy-inner {
+  overflow: auto;
+}
+.copy-inner > img {
+  max-height: 100%;
+}
 
 /*FOOTER*/
 
