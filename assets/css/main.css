@@ -112,7 +112,6 @@ h2.brand {
 .inner-header, .inner-header-border {
   padding: 0 0 15px 0;
   /*background-color: #e27563;*/
-  margin-bottom: 15px;
 }
 
 .inner-header-border {
@@ -131,7 +130,7 @@ table#products-table p {
 
 }
 
-.inner-header, .inner-header-border > h3{
+.inner-header > h3, .inner-header-border > h3 {
   color: black;
 }
 
@@ -283,7 +282,13 @@ img.logo {
   overflow: auto;
 }
 .copy-inner > img {
-  max-height: 100%;
+  border: 2px solid black;
+  max-height: 300px;
+}
+
+.col-inner.border-top {
+  padding-top: 15px;
+  border-top: 2px solid #407C8D;
 }
 
 /*FOOTER*/
