@@ -1,6 +1,11 @@
 /*hover color #ef7c69*/
 /*secondary button color #474d55*/
 /*secondaray hover #535a63*/
+body {
+  max-width: 1280px;
+  margin: 0 auto !important;
+  float: none !important;
+}
 
 h1, h2, h3, h4, a, b, button {
  font-family: 'Montserrat', sans-serif;;
@@ -39,6 +44,7 @@ nav.navbar.navbar-inverse {
   /*background-color: #407C8D;*/
   border: none;
   padding-left: 0;
+  padding-right: 0;
 }
 
 .navbar-nav > li > a, .navbar-brand {
@@ -192,7 +198,7 @@ h3.badges-header {
 }
 
 /*ABOUT US*/
-.row#about-row {
+.about-container > row:last-child {
   margin-bottom: 50px;
 }
 
