@@ -1,6 +1,7 @@
 /*hover color #ef7c69*/
 /*secondary button color #474d55*/
 /*secondaray hover #535a63*/
+
 body {
   max-width: 1280px;
   margin: 0 auto !important;
@@ -245,7 +246,11 @@ h3.badges-header {
 
 .footer .row {
   margin-top: 50px;
-  height: 300px;
+  height: 150px;
+}
+
+.footer h4 {
+  color: #e27563;
 }
 
 .brand img {
@@ -264,6 +269,12 @@ h3.badges-header {
   margin-top: 10px;
 }
 
+p.design {
+  color: #B0B0B0;
+}
 
-
+.design-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
