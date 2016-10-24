@@ -2,7 +2,13 @@
 /*secondary button color #474d55*/
 /*secondaray hover #535a63*/
 
-h1, h2, h3, h4, a {
+body {
+  max-width: 1280px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+h1, h2, h3, h4, a, b, button {
  font-family: 'Montserrat', sans-serif;;
 }
 
@@ -39,7 +45,21 @@ nav.navbar.navbar-inverse {
   background-color: #272d35;
   border: none;
   padding-left: 0;
+  padding-right: 0;
 }
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:30px !important; padding-bottom:0 !important;
+    height: 80px;
+}
+
+.navbar-right > li > a {
+  color: #407C8D;
+  font-size: 20px;
+}
+
+
+/*.navbar {min-height:30pxr !important;}*/
 
 
 .navbar-inverse .navbar-brand {
@@ -59,14 +79,16 @@ h2.brand {
   margin-top: 0;
 }
 
-/*WRAPPERS*/
+/*CONTAINER*/
 .container {
   margin-bottom: 60px;
 }
 
+/*HEADER*/
 .header {
   margin-top: 60px;
   margin-bottom: 60px;
+  border-top: 4px solid #407C8D;
   text-align: center;
 }
 
@@ -80,8 +102,64 @@ h2.brand {
   color: #e27563;
 }
 
-.inner {
-  display: inline-block;
+/*ROW*/
+.row {
+  margin-bottom: 30px;
+}
+
+/*COL INNER*/
+.row .col-inner {
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.col-inner.image {
+  max-width: 360px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+.col-inner.image > img {
+  max-height: 300px;
+}
+
+.col-inner.border {
+  padding-top: 15px;
+  border-top: 2px solid #407C8D;
+}
+
+.col-inner .content {
+  margin-top: 15px;
+}
+
+.col-inner.border .content {
+  margin-top: 0;
+}
+
+/*INNER HEADER*/
+.inner-header {
+  padding: 0 0 15px 0;
+}
+
+.inner-header.border {
+  border-bottom: 2px solid #407C8D;
+}
+
+.inner-header h2, h3 {
+  margin: 0 0 0 0;
+}
+
+.inner-header > h3 {
+  color: black;
+}
+
+
+.table-header h4 {
+  margin-top: 0;
+}
+
+.grid-test {
+  border: 2px solid black;
+  min-height: 300px;
 }
 
 /*BANNER*/
@@ -115,36 +193,31 @@ h2.brand {
 
 /*BADGES*/
 
-#badges-inner h3{
+.col-inner.badges h3{
   color: black;
 }
 
-#badges-inner > div {
-  height: 300px;
-  border-right: 1px solid black;
+.col-inner.badges > div {
   padding-top: -20px;
   padding-bottom: -20px;
   margin-bottom: 15px;
   text-align: center;
 }
 
-#badges-inner > div:nth-child(3) {
-  border: none;
-}
-
-#badges-inner > div:last-child {
-  border: none;
-}
-
-#badges-inner img {
+.col-inner.badges img {
   height: 100px;
-  margin-bottom: -15px;
+  margin-bottom: -11px;
 }
 
-#badges-inner i {
+.badges-content i, b {
+  line-height: 1;
   font-size: 90px;
 }
 
+h3.badges-header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 .call button.btn.btn-primary {
   position: relative;
@@ -155,53 +228,11 @@ h2.brand {
   background-color: #e27563;
 }
 
+/*ABOUT US*/
+
 /*PRINTING*/
 
-.container-fluid#printing-container {
-  /*background-color: #EFEBEF;*/
-}
-
-.row#printing-row {
-
-  margin-bottom: 30px;
-}
-
-.row#printing-row h3 {
-  color: black;
-}
-
-.row#printing-row .col-inner {
-  /*background-color: #EFEFEF;*/
-  /*border: 1px solid black;*/
-  /*border-radius: 5px;*/
-  margin-right: auto;
-  padding-top: 0;
-  /*height: 300px;*/
-  overflow: hidden;
-}
-
-.col-inner#image {
-  border: 1px solid black;
-}
-.col-inner#image > img {
-  max-height: 300px;
-}
-
-.inner-header {
-  border-bottom: 1px solid black;
-  padding: 15px 0 15px 0;
-  /*background-color: #e27563;*/
-  margin-bottom: 15px;
-}
-
-.inner-header h3 {
-  margin: 0 0 0 0;
-}
-
-.table-header h4 {
-  margin-top: 0;
-}
-
+/*COPY SERVICES*/
 
 /*FOOTER*/
 
@@ -215,7 +246,11 @@ h2.brand {
 
 .footer .row {
   margin-top: 50px;
-  height: 300px;
+  height: 150px;
+}
+
+.footer h4 {
+  color: #e27563;
 }
 
 .brand img {
@@ -234,6 +269,12 @@ h2.brand {
   margin-top: 10px;
 }
 
+p.design {
+  color: #B0B0B0;
+}
 
-
+.design-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
