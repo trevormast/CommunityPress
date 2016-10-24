@@ -32,7 +32,7 @@ td {
   padding-left: 0;
 }
 
-.navbar-wrapper .navbar {
+.navbar-wrapper .navbar{
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -53,11 +53,13 @@ nav.navbar.navbar-inverse {
     height: 80px;
 }
 
+.navbar-toggle {
+  margin-top:20px !important;}
+
 .navbar-right > li > a {
   color: #407C8D;
   font-size: 20px;
 }
-
 
 /*.navbar {min-height:30pxr !important;}*/
 
@@ -278,3 +280,20 @@ p.design {
   margin-bottom: 20px;
 }
 
+  /* Tablet */
+
+  @media screen and (min-width: 737px) and (max-width: 1200px) {
+    /*NAV*/
+    ul.nav > li {
+      padding-left: 20px;
+    }
+  }
+
+  /* Mobile */
+
+  @media screen and (max-width: 736px) {
+    /*NAV*/
+    ul.nav > li {
+      padding-left: 20px;
+    }
+  }
