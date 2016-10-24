@@ -61,7 +61,6 @@ nav.navbar.navbar-inverse {
   font-size: 20px;
 }
 
-
 /*.navbar {min-height:30pxr !important;}*/
 
 
@@ -284,11 +283,17 @@ p.design {
   /* Tablet */
 
   @media screen and (min-width: 737px) and (max-width: 1200px) {
-
+    /*NAV*/
+    ul.nav > li {
+      padding-left: 20px;
+    }
   }
 
   /* Mobile */
 
   @media screen and (max-width: 736px) {
-
+    /*NAV*/
+    ul.nav > li {
+      padding-left: 20px;
+    }
   }
