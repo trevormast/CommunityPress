@@ -53,6 +53,9 @@ nav.navbar.navbar-inverse {
     height: 80px;
 }
 
+.navbar-toggle {
+  margin-top:20px !important;}
+
 .navbar-right > li > a {
   color: #407C8D;
   font-size: 20px;
@@ -278,3 +281,14 @@ p.design {
   margin-bottom: 20px;
 }
 
+  /* Tablet */
+
+  @media screen and (min-width: 737px) and (max-width: 1200px) {
+
+  }
+
+  /* Mobile */
+
+  @media screen and (max-width: 736px) {
+
+  }
