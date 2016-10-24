@@ -1,10 +1,12 @@
 $(window).on('load', function() {
 
-  // var x = parseInt($('.wrapper').css('padding-top')) - 15;
-
+  //Scrolling navigation
   $('.scrolly').scrolly({
-      speed: 1000,
-      offset: -40
+      speed: 1000
+  });
+
+  $('.navbar-collapse').on('click', function(){
+    $(this).collapse('hide');
   });
 
 });
