@@ -83,7 +83,7 @@ h2.brand {
 
 /*CONTAINER*/
 .container {
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 /*HEADER*/
@@ -107,6 +107,10 @@ h2.brand {
 /*ROW*/
 .row {
   margin-bottom: 30px;
+}
+
+.row.inner-row {
+  margin-bottom: 0;
 }
 
 /*COL INNER*/
@@ -283,6 +287,26 @@ p.design {
   /* Tablet */
 
   @media screen and (min-width: 737px) and (max-width: 1200px) {
+    /*CONTAINERS*/
+    .overlay-content {
+      margin-top: 180px;
+    }
+
+    .col-inner.image {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
+
+    .footer .row {
+      height: inherit;
+    }
+
+    .footer img {
+      float: left;
+      margin-bottom: 10px;
+    }
+
     /*NAV*/
     ul.nav > li {
       padding-left: 20px;
@@ -292,8 +316,49 @@ p.design {
   /* Mobile */
 
   @media screen and (max-width: 736px) {
+    /*CONTAINERS*/
+    .container {
+      margin-bottom: 0;
+    }
+
+    .row {
+      margin-bottom: 0;
+    }
+
+    .footer .row {
+      height: inherit;
+    }
+
+    .footer img {
+      float: left;
+      margin-bottom: 10px;
+    }
+
+    .banner {
+      margin-bottom: 0;
+    }
+
+    .overlay-content {
+      margin-top: 180px;
+    }
+
+    .col-inner.image {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
+
     /*NAV*/
     ul.nav > li {
       padding-left: 20px;
+    }
+
+    /*BADGES*/
+
+  }
+
+  @media screen and (max-width: 459px) {
+    .overlay-content {
+      margin-top: 150px;
     }
   }
