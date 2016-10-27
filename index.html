@@ -386,12 +386,56 @@
     <!-- FOOTER -->
     <div class="container-fluid footer" id="contact-container">
       <div class="row">
-        <div class="col-lg-2 footer-content brand">
+<!--         <div class="col-lg-2 footer-content brand">
           <div class="col-inner">
             <img src="./assets/images/bigstock-Full-color-spectrum-transparent-22660229.png">
           </div>
         </div>
-        <div class="col-lg-5 footer-content address">
+ -->
+        <div class="col-lg-6 footer-content">
+          <form action="https://postmail.invotes.com/send"
+              method="post" id="email_form">
+            <div class="form-group form-inline">
+              <input class="form-control" type="text" name="extra-first-name" placeholder="First Name"/>
+              <input class="form-control" type="text" name="extra-last-name" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="extra_email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" name="subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="text" placeholder="Message"></textarea>
+            </div>
+              <input type="hidden" name="access_token" value="24amj5oq93gx7jl0hwii0hi3" />
+                <!-- return urls can be fully qualified -OR-
+                   start with / for root relative -OR-
+                   start with . for url relative -->
+              <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+              <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+
+
+              <!-- set the reply-to address -->
+              <!-- <input type="text" name="reply_to"
+                          placeholder="Your Email" /> -->
+
+              <!-- to append extra fields, use the extra_ prefix.
+                  Entries will be appended to your message body. -->
+              <!-- <input type="text" name="extra_phone_number"
+                          placeholder="Phone Number" /> -->
+
+              <!-- to split your message into 160 chars
+                   for an sms gateway -->
+              <!-- <input type="hidden"
+                          name="sms_format" value="true" /> -->
+
+              <input class="btn btn-primary" id="submit_form" type="submit" value="Send" />
+              <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+<!--               <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
+ -->          </form>
+        </div>
+        <div class="col-lg-3 footer-content address">
           <div class="col-inner">
             <h4>Community Press</h4>
             <p>5595 Magnatron Boulevard</p>
@@ -399,7 +443,7 @@
             <p>San Diego, CA 92111</p>
           </div>
         </div>
-        <div class="col-lg-5 footer-content contact">
+        <div class="col-lg-3 footer-content contact">
           <div class="col-inner">
             <br>
             <span>
@@ -424,13 +468,13 @@
           </div>
         </div>
       </div>
-      <!-- <div class="container design-container">
+      <div class="container design-container">
         <div class="col-inner">
           <p class="design">site design by
             <a href="http://trevormast.net">Trevor Mast</a>
           </p>
         </div>
-      </div> -->
+      </div>
     </div>
   </body>
 </html>
