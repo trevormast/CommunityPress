@@ -50,6 +50,23 @@
     </div>
   </div>
 
+      <div class="modal fade" id="alert-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Success!</h4>
+            </div>
+            <div class="modal-body">
+              p Your message was sent.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
   <!-- ABOUT US -->
   <div class="container" id="about-container">
     <div class="row">
@@ -365,23 +382,20 @@
       /   </div>
       / </div>
       <div class="col-lg-6 footer-content">
-        - @flash.each do |message|
-          p.alert== message
-        <form action="/mail" method="post" id="email_form">
+        <form name="email-form" action="/mail" method="post" id="email_form">
           <div class="form-group form-inline">
             <input class="form-control" type="text" name="first-name" placeholder="First Name"/>
             <input class="form-control" type="text" name="last-name" placeholder="Last Name">
           </div>
 
           <div class="form-group">
-            <input class="form-control" type="text" name="email" placeholder="Email">
+            <input class="form-control" type="email" name="email" placeholder="Email">
           </div>
 
           <div class="form-group">
             <textarea class="form-control" name="message" placeholder="Message"></textarea>
           </div>
-
-            <input class="btn btn-primary" id="submit_form" type="submit" value="Send"d/>
+          <input class="btn btn-primary" type="submit" id="ajax_form" value="Submit"/>
         </form>
       </div>
       <div class="col-lg-3 footer-content address">
@@ -427,4 +441,20 @@
   </div>
 </body>
 
+javascript:
+  $('#ajax_form').on('click', function(e) {
+    e.preventDefault();
+    var form = $('#email_form')
+    $.ajax({
+                url: '/mail',
+                type: 'POST',
+                data: form.serialize()
+            }).done(function(data) {
+                if (data.success) {
+                    $('#alert-modal').modal();
+                } else {
+                  console.log('error')
+                }
+            });
+  })
 

@@ -1,5 +1,9 @@
+require 'dotenv'
+Dotenv.load
+
 require 'sinatra'
 require 'pony'
+require 'json'
 require 'pry'
 
 class App < Sinatra::Base
@@ -10,8 +14,18 @@ class App < Sinatra::Base
   end
 
   post '/mail' do
-    binding.pry
-    send_mail
+    @flash ||= []
+
+    begin
+      send_mail
+    rescue StandardError => e
+      puts e.message
+      @flash << 'Oops! Something went wrong.'
+      redirect '/'
+    end
+
+    content_type :json
+    { success: true }.to_json
   end
 
   private
@@ -26,18 +40,18 @@ class App < Sinatra::Base
 
     def send_mail
       Pony.mail(
-        :to => ENV['email'],
+        :to => ENV['SEND_TO_EMAIL'],
         :subject => 'New message from CommunityPress.com',
-        :body => 'from: #{mail_params[:first_name]} #{mail_params[:last_name]}\n
-                  email: #{mail_params[:email]}\n
-                  message: #{mail_params[:message]}',
+        :body => "from: #{mail_params[:first_name]} #{mail_params[:last_name]}\n" +
+                  "email: #{mail_params[:email]}\n" +
+                  "message: #{mail_params[:message]}",
         :via => :smtp,
         :via_options => {
           :address => 'smtp.gmail.com',
           :port => '587',
           :enable_starttls_auto => true,
-          :user_name => ENV['user_name'],
-          :password => ENV['password'],
+          :user_name => ENV['SEND_FROM_USERNAME'],
+          :password => ENV['SEND_FROM_PASSWORD'],
           :authentication => 'plain',
           :domain => 'localhost.localdomain'
         }
