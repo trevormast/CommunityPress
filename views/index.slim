@@ -376,26 +376,29 @@
   <!-- FOOTER -->
   <div class="container-fluid footer" id="contact-container">
     <div class="row">
-      / <div class="col-lg-2 footer-content brand">
-      /   <div class="col-inner">
-      /     <img src="./assets/images/bigstock-Full-color-spectrum-transparent-22660229.png">
-      /   </div>
-      / </div>
       <div class="col-lg-6 footer-content">
         <form name="email-form" action="/mail" method="post" id="email_form">
-          <div class="form-group form-inline">
-            <input class="form-control" type="text" name="first-name" placeholder="First Name" required/>
-            <input class="form-control" type="text" name="last-name" placeholder="Last Name" required>
+          <div class="form-group col-lg-6">
+            <label for="first-name"> First Name </label>
+            <input class="form-control" type="text" name="first-name" placeholder="John" maxlength="20" required/>
+          </div>
+          <div class="form-group col-lg-6">
+            <label for="last-name"> Last Name </label>
+            <input class="form-control" type="text" name="last-name" placeholder="Smith" maxlength="20" required>
           </div>
 
-          <div class="form-group">
-            <input class="form-control" type="email" name="email" placeholder="Email" required>
+          <div class="form-group col-lg-12">
+            <label for="email"> Email Address</label>
+            <input class="form-control" type="email" name="email" placeholder="john.smith@mail.com" maxlength="20" required>
           </div>
 
-          <div class="form-group">
-            <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+          <div class="form-group col-lg-12">
+            <label for="message"> Message </label>
+            <textarea class="form-control" name="message" placeholder="Your message" required></textarea>
           </div>
-          <input class="btn btn-primary" type="submit" id="ajax_form" value="Submit"/>
+          <div class="form-group col-lg-12">
+            <input class="btn btn-primary" type="submit" id="ajax_form" value="Submit"/>
+          </div>
         </form>
       </div>
       <div class="col-lg-3 footer-content address">

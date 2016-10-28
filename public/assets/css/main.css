@@ -1,6 +1,6 @@
 /*hover color #ef7c69*/
 /*secondary button color #474d55*/
-/*secondaray hover #535a63*/
+/*secondary hover #535a63*/
 
 body {
   max-width: 1280px;
@@ -80,6 +80,8 @@ nav.navbar.navbar-inverse {
 h2.brand {
   margin-top: 0;
 }
+
+/*FORMS*/
 
 /*CONTAINER*/
 .container {
