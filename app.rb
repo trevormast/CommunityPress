@@ -1,10 +1,12 @@
-require 'dotenv'
-Dotenv.load
+if ENV["RACK_ENV"] == "development"
+  require 'dotenv'
+  Dotenv.load
+  require 'pry'
+end
 
 require 'sinatra'
 require 'pony'
 require 'json'
-require 'pry'
 
 class App < Sinatra::Base
 
