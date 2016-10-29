@@ -300,6 +300,22 @@ p.design {
       margin-bottom: 30px;
     }
 
+
+    /*NAV*/
+    .navbar-collapse {
+        max-height: none !important;
+        height: 100vh;
+    }
+
+    ul.nav > li {
+      padding-left: 20px;
+    }
+
+    /*FOOTER*/
+    .container-fluid.footer {
+      margin-top: 60px;
+    }
+
     .footer .row {
       height: inherit;
     }
@@ -309,9 +325,13 @@ p.design {
       margin-bottom: 10px;
     }
 
-    /*NAV*/
-    ul.nav > li {
-      padding-left: 20px;
+    .footer-content {
+      text-align: center;
+    }
+
+    #ajax_form {
+      padding-left: 90px;
+      padding-right: 90px;
     }
   }
 
@@ -325,15 +345,6 @@ p.design {
 
     .row {
       margin-bottom: 0;
-    }
-
-    .footer .row {
-      height: inherit;
-    }
-
-    .footer img {
-      float: left;
-      margin-bottom: 10px;
     }
 
     .banner {
@@ -351,11 +362,38 @@ p.design {
     }
 
     /*NAV*/
+    .navbar-collapse {
+        max-height: none !important;
+        height: 100vh;
+    }
+
     ul.nav > li {
       padding-left: 20px;
     }
 
-    /*BADGES*/
+    /*FOOTER*/
+    .container-fluid.footer {
+      margin-top: 60px;
+    }
+
+    .footer-content {
+      text-align: center;
+    }
+
+    #ajax_form {
+      padding-left: 90px;
+      padding-right: 90px;
+    }
+
+    .footer .row {
+      height: inherit;
+    }
+
+    .footer img {
+      float: left;
+      margin-bottom: 10px;
+    }
+
 
   }
 
