@@ -397,6 +397,7 @@
           </div>
           <div class="form-group col-lg-12">
             <input class="btn btn-primary" type="submit" id="ajax_form" value="Submit"/>
+            <i class="fa fa-spinner fa-pulse hide" id="busy-spinner"></i>
           </div>
         </form>
       </div>
@@ -443,7 +444,11 @@
 javascript:
   $('#email_form').on('submit', function(e) {
     e.preventDefault();
-    var form = $('#email_form')
+
+    var spinner = $('#busy-spinner');
+    spinner.removeClass('hide');
+
+    var form = $('#email_form');
     $.ajax({
                 url: '/mail',
                 type: 'POST',
@@ -451,9 +456,11 @@ javascript:
             }).done(function(data) {
                 if (data.success) {
                     form[0].reset();
+                    spinner.addClass('hide');
                     $('#alert-modal').modal();
                 } else {
                   console.log('error')
+                  spinner.addClass('hide');
                 }
             });
   })

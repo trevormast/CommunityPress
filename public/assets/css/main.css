@@ -290,6 +290,13 @@ p.design {
   margin-bottom: 20px;
 }
 
+#busy-spinner {
+  margin-left: 15px;
+  font-size: 32px;
+  vertical-align: middle;
+  color: #e27563;
+}
+
   /* Tablet */
 
   @media screen and (min-width: 737px) and (max-width: 1200px) {
