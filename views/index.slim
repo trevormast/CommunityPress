@@ -450,6 +450,7 @@ javascript:
                 data: form.serialize()
             }).done(function(data) {
                 if (data.success) {
+                    form[0].reset();
                     $('#alert-modal').modal();
                 } else {
                   console.log('error')
